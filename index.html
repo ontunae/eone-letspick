@@ -15,9 +15,12 @@
 
 	<script type="text/javascript">
 		$(document).ready(function() {
-			// a: 김재명, b: 송지원, c: 임중경, d: 전우치, e: 정태성, f: 조윤
-			// g: 초인, h: 최준호, i: 한대수, j: 한정석, k: 한치원, l: 최희철
+			
+			// 여기!
+			// 여기!
+			// 여기!
 			const name = ['김재명', '송지원', '임중경', '전우치', '정태성', '조윤', '초인', '최준호', '한대수', '한정석', '한치원', '최희철'];
+			
 			var result = '';
 			var qn = 1;
 
@@ -25,6 +28,9 @@
 				var clicked = $(this).attr('value');
 				result = result + clicked;
 
+				// 여기! qn = 11을
+				// 여기! qn = 총 질문 개수로
+				// 여기! !
 				if (qn != 11) {
 					$('#q' + qn).css('display', 'none');
 					qn = qn + 1;
@@ -68,6 +74,7 @@
 	<div id="wrap">
 		<div class="box">
 			<ul>
+				<!-- 가중치 값: 3 -->
 				<li id="q1">
 					<div class="content">
 						<div class="question">1.<br>내 이상형이랑 닮은 동물을 꼽자면 역시</div>
@@ -126,6 +133,7 @@
 					</div>
 				</li>
 
+				<!-- 가중치 값: 2 -->
 				<li id="q7">
 					<div class="content">
 						<div class="question">7.<br>내 이상형이 이것만큼은 꼭 뛰어났으면 좋겠다!</div>
