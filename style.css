@@ -1,0 +1,230 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+* {
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+	box-sizing: border-box;
+	font-family: 'NanumSquare', sans-serif;
+	font-size: 18px;
+	cursor: default;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background: url('https://source.unsplash.com/5brvJbR1Pn8/1600x900');
+	-webkit-background-size: cover;
+	background-size: cover;
+	/* background: rgb(79, 172, 254);
+	background: -moz-linear-gradient(0deg, rgba(79, 172, 254, 1) 0%, rgba(0, 242, 254, 1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(79, 172, 254, 1) 0%, rgba(0, 242, 254, 1) 100%);
+	background: linear-gradient(0deg, rgba(79, 172, 254, 1) 0%, rgba(0, 242, 254, 1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4facfe", endColorstr="#00f2fe", GradientType=1); */
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	font-size: inherit;
+}
+
+#wrap {
+	width: 90%;
+	max-width: 720px;
+	height: 75%;
+	background: rgba(255, 255, 255, .97);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.box {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+li {
+	display: none;
+	padding: 0 25px;
+}
+
+#q1 {
+	display: block;
+}
+
+.question {
+	font-weight: 800;
+	line-height: 1.4;
+	text-align: left;
+	margin-bottom: 18px;
+	color: #0fa7d6;
+}
+
+.answer {
+	width: 100%;
+	background: #39bbe3;
+	color: white;
+	padding: 8px 3px;
+	margin-bottom: 6px;
+	font-weight: 700;
+	-ms-word-break: keep-all;
+	word-break: keep-all;
+	word-wrap: break-word;
+	transition: .2s ease-in-out all;
+	-webkit-box-shadow: 3px 3px 1px #F1B2C7;
+	box-shadow: 3px 3px 1px #F1B2C7;
+}
+
+.answer:hover {
+	background: #F1B2C7;
+	-webkit-box-shadow: 3px 3px 1px #39bbe3;
+	box-shadow: 3px 3px 1px #39bbe3;
+}
+
+.content > .answer:last-child {
+	margin-bottom: 0;
+}
+
+footer {
+	position: absolute;
+	left: 50%;
+	bottom: 15px;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+#re-body {
+	background: #FFEAA2;
+}
+
+#re-body > .box {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -60%);
+	-ms-transform: translate(-50%, -60%);
+	-o-transform: translate(-50%, -60%);
+	transform: translate(-50%, -60%);
+}
+
+.result {
+	width: 93%;
+	max-width: 720px;
+}
+
+h1,
+h6 {
+	font-weight: 400;
+	font-family: 'Gugi', cursive;
+	letter-spacing: -1px;
+	font-size: 24px;
+}
+
+h6 {
+	line-height: 1.6;
+	color: #39bbe3;
+}
+
+h1 {
+	margin-bottom: 25px;
+	font-weight: 800;
+	color: #0fa7d6;
+}
+
+
+
+.image {
+	width: 100%;
+}
+
+img {
+	width: 100%;
+	border: white solid 10px;
+	border-bottom-width: 40px;
+}
+
+.btn {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.restart {
+	background-color: #F1B2C7;
+	color: #fff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	font-size: 16px;
+	font-weight: 800;
+	padding: 6px 15px;
+	transition: .2s ease-in-out all;
+	margin-bottom: 5px;
+}
+
+.restart:hover {
+	background-color: #fff;
+	color: #39bbe3;
+
+}
+
+.restart:active {
+	position: relative;
+	top: 1px;
+}
+
+@media (min-width: 768px) {
+
+	h6 {
+		font-size: 30px;
+		line-height: 1.5;
+	}
+
+	h1 {
+		font-size: 42px;
+		margin-bottom: 24px;
+	}
+
+	img {
+		border: white solid 15px;
+		border-bottom-width: 60px;
+	}
+
+	.btn {
+		bottom: 70px;
+	}
+
+	.restart {
+		font-size: 18px;
+		padding: 8px 18px;
+		margin-bottom: 7px;
+	}
+}

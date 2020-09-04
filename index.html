@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="author" content="구구(@QB55yn6) = 이원(@on_tuna_e)">
+	<meta name="description" content="강동원 필모그래피 팬메이드 이상형 테스트">
+	<meta name="theme-color" content="#F1B2C7">
+
+	<title>챔필 이상형 테스트</title>
+
+	<link rel=" stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// a: 김재명, b: 송지원, c: 임중경, d: 전우치, e: 정태성, f: 조윤
+			// g: 초인, h: 최준호, i: 한대수, j: 한정석, k: 한치원, l: 최희철
+			const name = ['김재명', '송지원', '임중경', '전우치', '정태성', '조윤', '초인', '최준호', '한대수', '한정석', '한치원', '최희철'];
+			var result = '';
+			var qn = 1;
+
+			$('.answer').click(function() {
+				var clicked = $(this).attr('value');
+				result = result + clicked;
+
+				if (qn != 11) {
+					$('#q' + qn).css('display', 'none');
+					qn = qn + 1;
+					$('#q' + qn).css('display', 'block');
+				} else {
+					const a = (result.match(/a/g) || []).length;
+					const b = (result.match(/b/g) || []).length;
+					const c = (result.match(/c/g) || []).length;
+					const d = (result.match(/d/g) || []).length;
+					const e = (result.match(/e/g) || []).length;
+					const f = (result.match(/f/g) || []).length;
+					const g = (result.match(/g/g) || []).length;
+					const h = (result.match(/h/g) || []).length;
+					const i = (result.match(/i/g) || []).length;
+					const j = (result.match(/j/g) || []).length;
+					const k = (result.match(/k/g) || []).length;
+					const l = (result.match(/l/g) || []).length;
+
+					const cand = [a, b, c, d, e, f, g, h, i, j, k, l];
+					const max = Math.max.apply(null, cand);
+					var cand_a = [];
+					for (var n = 0; n < cand.length; n++) {
+						if (cand[n] == max)
+							cand_a.push(name[n]);
+					}
+
+					const final = cand_a[Math.floor(Math.random() * cand_a.length)];
+					window.location.href = 'result/' + final + ".html";
+				}
+			})
+		})
+
+	</script>
+</head>
+
+<body>
+	<!--
+		a: 김재명, b: 송지원, c: 임중경, d: 전우치, e: 정태성, f: 조윤
+		g: 초인, h: 최준호, i: 한대수, j: 한정석, k: 한치원, l: 최희철
+	-->
+	<div id="wrap">
+		<div class="box">
+			<ul>
+				<li id="q1">
+					<div class="content">
+						<div class="question">1.<br>내 이상형이랑 닮은 동물을 꼽자면 역시</div>
+						<div class="answer" value="aaaccciiijjj">강아지</div>
+						<div class="answer" value="bbbfffggg">고양이</div>
+						<div class="answer" value="eeehhhlll">토끼</div>
+						<div class="answer" value="dddkkk">앵무새</div>
+					</div>
+				</li>
+
+				<li id="q2">
+					<div class="content">
+						<div class="question">2.<br>나는 카페에 가서</div>
+						<div class="answer" value="bfhk">아이스 커피를 주문한다</div>
+						<div class="answer" value="ac">핫 커피를 주문한다</div>
+						<div class="answer" value="gijl">베이커리류를 주문한다</div>
+						<div class="answer" value="de">대세는 스무디랑 요거트지!</div>
+					</div>
+				</li>
+
+				<li id="q3">
+					<div class="content">
+						<div class="question">3.<br>내 재생목록은</div>
+						<div class="answer" value="dk">최신 유행 그 자체다</div>
+						<div class="answer" value="ejl">숨듣명의 대명사다</div>
+						<div class="answer" value="afg">뮤지컬 넘버나 오페라, 클래식으로 가득하다</div>
+						<div class="answer" value="bchi">추억 저장소다</div>
+					</div>
+				</li>
+
+				<li id="q4">
+					<div class="content">
+						<div class="question">4.<br>놀이공원 폐장 직전! 딱 하나만 더 탈 수 있다면?</div>
+						<div class="answer" value="abhl">회전목마</div>
+						<div class="answer" value="dk">롤러코스터</div>
+						<div class="answer" value="cej">대관람차</div>
+						<div class="answer" value="fgi">기념품 가게로 직진</div>
+					</div>
+				</li>
+
+				<li id="q5">
+					<div class="content">
+						<div class="question">5.<br>나는 여행을 가기 전에</div>
+						<div class="answer" value="bcgjl">최악의 상황부터 가정하는 편이다</div>
+						<div class="answer" value="afhi">숙박, 교통편부터 알아보는 편이다</div>
+						<div class="answer" value="dek">무계획이 계획이다</div>
+					</div>
+				</li>
+
+				<li id="q6">
+					<div class="content">
+						<div class="question">6.<br>자고로 라면은</div>
+						<div class="answer" value="acdej">꼬들면이 제맛</div>
+						<div class="answer" value="bil">푹 끓인 면이 제맛</div>
+						<div class="answer" value="fghk">남이 끓여 준 게 짱</div>
+					</div>
+				</li>
+
+				<li id="q7">
+					<div class="content">
+						<div class="question">7.<br>내 이상형이 이것만큼은 꼭 뛰어났으면 좋겠다!</div>
+						<div class="answer" value="bbee">요리 실력</div>
+						<div class="answer" value="aaddhhkk">말재주</div>
+						<div class="answer" value="ffll">악기 연주</div>
+						<div class="answer" value="ccggiijj">손재주</div>
+					</div>
+				</li>
+
+				<li id="q8">
+					<div class="content">
+						<div class="question">8.<br>나는 주말에</div>
+						<div class="answer" value="abfgj">집에 있는 편이다</div>
+						<div class="answer" value="cdei">밖에 나가는 편이다</div>
+						<div class="answer" value="hkl">친구랑 약속을 잡는 편이다</div>
+					</div>
+				</li>
+
+				<li id="q9">
+					<div class="content">
+						<div class="question">9.<br>집에 나밖에 없는데, 거실에서 이상한 소리가 들린다...!</div>
+						<div class="answer" value="abdej">거실로 나가 살펴본다</div>
+						<div class="answer" value="cfgkl">방문을 걸어 잠근다</div>
+						<div class="answer" value="hi">씩씩하게 성가를 부른다</div>
+					</div>
+				</li>
+
+				<li id="q10">
+					<div class="content">
+						<div class="question">10.<br>로또에 당첨되면</div>
+						<div class="answer" value="bghk">집부터 장만하겠다</div>
+						<div class="answer" value="il">몽땅 저금할 것이다</div>
+						<div class="answer" value="de">은혜부터 갚아야지</div>
+						<div class="answer" value="acfj">비현실적인 일을 상상하느니, 그 시간에 보다 유익한 걸 하겠다</div>
+					</div>
+				</li>
+
+				<li id="q11">
+					<div class="content">
+						<div class="question">11.<br>내가 제일 좋아하는 계절은</div>
+						<div class="answer" value="bdil">봄</div>
+						<div class="answer" value="ehk">여름</div>
+						<div class="answer" value="acj">가을</div>
+						<div class="answer" value="fg">겨울</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<footer>
+			<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="🌊 챔필 이상형 테스트! 1가정 1챔필 보급 𝐫𝐞𝐚𝐥𝐥𝐲 요망 ㅠ.ㅠ" data-url="http://chamtuna.dothome.co.kr/" data-hashtags="챔필,이상형테스트,이원_테스트" data-related="" data-lang="ko" data-show-count="false">공유하기</a>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</footer>
+	</div>
+
+</body>
+
+</html>
